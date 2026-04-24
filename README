@@ -1,0 +1,57 @@
+NAME
+    marc-field008 - Script to decode MARC 008 field from file or string.
+
+SYNOPSIS
+     marc-field008 [-a] [-d] [-f marc_xml_file] [-h] [-v] [--version] [field008_string]
+
+DESCRIPTION
+    It supports MARC XML files now.
+
+ARGUMENTS
+    *       "-a"
+
+            Print with ANSI colors. Or use "NO_COLOR"/"COLOR" env variables.
+
+    *       "-d"
+
+            Don't print description.
+
+    *       "-f marc_xml_file"
+
+            MARC XML file name to decode of leader
+
+    *       "-h"
+
+            Print help.
+
+    *       "-v"
+
+            Verbose mode.
+
+    *       "--version"
+
+            Print version of script.
+
+    *       "field008_string"
+
+            MARC 008 field string to decode.
+
+EXAMPLE
+     marc-field008 -f __MARC.xml__
+
+REPOSITORY
+    <https://github.com/michal-josef-spacek/App-MARC-Field008>
+
+AUTHOR
+    Michal Josef Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    © 2025-2026 Michal Josef Špaček
+
+    BSD 2-Clause License
+
+VERSION
+    0.01
+
