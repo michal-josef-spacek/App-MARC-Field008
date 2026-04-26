@@ -24,11 +24,11 @@ __END__
 
 =head1 NAME
 
-marc-field008 - Script to decode MARC 008 field from file or string.
+marc-field008 - Tool to decode MARC 008 field from file or string.
 
 =head1 SYNOPSIS
 
- marc-field008 [-a] [-d] [-f marc_xml_file] [-h] [-v] [--version] [field008_string]
+ marc-field008 [-a] [-d] [-f marc_xml_file] [-h] [-v] [--version] [leader_string field008_string]
 
 =head1 DESCRIPTION
 
@@ -63,9 +63,9 @@ Verbose mode.
 
 Print version of script.
 
-=item * C<field008_string>
+=item * C<[leader_string field008_string]>
 
-MARC 008 field string to decode.
+MARC leader and 008 field strings to decode.
 
 =back
 

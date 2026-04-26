@@ -1,8 +1,8 @@
 NAME
-    marc-field008 - Script to decode MARC 008 field from file or string.
+    marc-field008 - Tool to decode MARC 008 field from file or string.
 
 SYNOPSIS
-     marc-field008 [-a] [-d] [-f marc_xml_file] [-h] [-v] [--version] [field008_string]
+     marc-field008 [-a] [-d] [-f marc_xml_file] [-h] [-v] [--version] [leader_string field008_string]
 
 DESCRIPTION
     It supports MARC XML files now.
@@ -32,9 +32,9 @@ ARGUMENTS
 
             Print version of script.
 
-    *       "field008_string"
+    *       "[leader_string field008_string]"
 
-            MARC 008 field string to decode.
+            MARC leader and 008 field strings to decode.
 
 EXAMPLE
      marc-field008 -f __MARC.xml__
