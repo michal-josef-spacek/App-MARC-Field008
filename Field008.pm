@@ -13,7 +13,7 @@ use MARC::Field008::Print;
 use MARC::Leader;
 use Unicode::UTF8 qw(encode_utf8);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Constructor.
 sub new {
@@ -432,6 +432,6 @@ the Czech Republic (DKRVO 2024–2028), Area 11: Linked Open Data.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut

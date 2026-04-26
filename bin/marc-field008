@@ -5,7 +5,7 @@ use warnings;
 
 use App::MARC::Field008;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Run.
 exit App::MARC::Field008->new->run;
@@ -98,6 +98,6 @@ the Czech Republic (DKRVO 2024–2028), Area 11: Linked Open Data.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
