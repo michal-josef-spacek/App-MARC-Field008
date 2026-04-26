@@ -163,6 +163,8 @@ Returns 1 for error, 0 for success.
  use File::Temp qw(tempfile);
  use MIME::Base64;
 
+ $ENV{'NO_COLOR'} = 1;
+
  # Content.
  my $marc_xml_example = <<'END';
  PD94bWwgdmVyc2lvbiA9ICIxLjAiIGVuY29kaW5nID0gIlVURi04Ij8+Cjxjb2xsZWN0aW9uIHht
@@ -272,7 +274,7 @@ Returns 1 for error, 0 for success.
 
 =head1 EXAMPLE2
 
-=for comment filename=print_marc_leader_from_marc_xml_file_with_ansi.pl
+=for comment filename=print_marc_field008_from_marc_xml_file_with_ansi.pl
 
  use strict;
  use warnings;

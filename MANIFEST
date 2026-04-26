@@ -2,7 +2,7 @@ bin/marc-field008
 Changes
 CONCEPT
 examples/print_marc_field008_from_marc_xml_file.pl
-examples/print_marc_leader_from_marc_xml_file_with_ansi.pl
+examples/print_marc_field008_from_marc_xml_file_with_ansi.pl
 Field008.pm
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
