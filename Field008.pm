@@ -399,11 +399,13 @@ Returns 1 for error, 0 for success.
 =head1 DEPENDENCIES
 
 L<Class::Utils>,
+L<Error::Pure>,
 L<Getopt::Std>,
 L<MARC::File::XML>,
 L<MARC::Field008>,
 L<MARC::Field008::Print>,
-L<MARC::Leader>.
+L<MARC::Leader>,
+L<Unicode::UTF8>.
 
 =head1 REPOSITORY
 
