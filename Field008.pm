@@ -56,15 +56,15 @@ sub run {
 		|| $self->{'_opts'}->{'h'}
 		|| (! $self->{'_opts'}->{'f'} && ! defined $marc_field008 && ! defined $marc_leader)) {
 
-		print STDERR "Usage: $0 [-a] [-d] [-f marc_xml_file] [-h] [-l lang_code] [-v] [--version] [leader_string field_008_string]\n";
-		print STDERR "\t-a\t\t\tPrint with ANSI colors (or use NO_COLOR/COLOR env variables).\n";
-		print STDERR "\t-d\t\t\tDon't print description.\n";
-		print STDERR "\t-f marc_xml_file\tMARC XML file.\n";
-		print STDERR "\t-h\t\t\tPrint help.\n";
-		print STDERR "\t-l lang_code\t\tISO 639-1 language code (default is from locales).\n";
-		print STDERR "\t-v\t\t\tVerbose mode.\n";
-		print STDERR "\t--version\t\tPrint version.\n";
-		print STDERR "\t[leader_string field_008_string]\t\tMARC leader and field 008 strings.\n";
+		print STDERR "Usage: $0 [-a] [-d] [-f marc_xml_file] [-h] [-l lang_code] [-v] [--version] [leader_string field008_string]\n";
+		print STDERR "\t-a\t\t\t\tPrint with ANSI colors (or use NO_COLOR/COLOR env variables).\n";
+		print STDERR "\t-d\t\t\t\tDon't print description.\n";
+		print STDERR "\t-f marc_xml_file\t\tMARC XML file.\n";
+		print STDERR "\t-h\t\t\t\tPrint help.\n";
+		print STDERR "\t-l lang_code\t\t\tISO 639-1 language code (default is from locales).\n";
+		print STDERR "\t-v\t\t\t\tVerbose mode.\n";
+		print STDERR "\t--version\t\t\tPrint version.\n";
+		print STDERR "\t[leader_string field008_string]\tMARC leader and field 008 strings.\n";
 		return 1;
 	}
 	my $marc_xml_file = $ARGV[0];
