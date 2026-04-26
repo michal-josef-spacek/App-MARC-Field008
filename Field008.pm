@@ -84,7 +84,7 @@ sub run {
 		)->parse($marc_leader);
 	};
 	if ($EVAL_ERROR) {
-		err "Error in leader! TODO";
+		err "Cannot parse MARC leader.";
 	}
 	my $field008 = eval {
 		MARC::Field008->new(
@@ -93,7 +93,7 @@ sub run {
 		)->parse($marc_field008);
 	};
 	if ($EVAL_ERROR) {
-		err "Error in field 008. TODO";
+		err "Cannot parse MARC field 008.";
 	}
 
 	# Print information.
@@ -150,6 +150,10 @@ Returns 1 for error, 0 for success.
  new():
          From Class::Utils::set_params():
                  Unknown parameter '%s'.
+
+ run():
+         Cannot parse MARC field 008.
+         Cannot parse MARC leader.
 
 =head1 EXAMPLE1
 
